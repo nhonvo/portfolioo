@@ -528,3 +528,20 @@ img {
     width: 450px;
   }
 }
+
+.home__scroll {
+  color: var(--first-color);
+  right: -0rem;
+  bottom: 6rem; /*cambio*/
+  display: grid;
+  row-gap: 2.25rem;
+  justify-items: center;
+}
+
+.home__scroll-icon {
+  font-size: 1.25rem;
+}
+
+.home__scroll-name {
+  font-size: var(--smaller-font-size);
+}
