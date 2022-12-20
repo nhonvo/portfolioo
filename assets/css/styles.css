@@ -545,3 +545,25 @@ img {
 .home__scroll-name {
   font-size: var(--smaller-font-size);
 }
+
+/* ===== CONTACT =====*/
+.contact__container{
+  row-gap: 2rem;
+}
+.contact__subtitle{
+  font-size: var(--normal-font-size);
+  color: var(--first-color);
+}
+.contact__text{
+  display: inline-block;
+  margin-bottom: var(--mb-2);
+}
+
+
+    .contact__container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .contact__form{
+        width: 380px;
+    }
