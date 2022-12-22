@@ -615,7 +615,9 @@ body.light-theme {
 }
 
 
-.light-theme .l-header {
+.light-theme .l-header, 
+.light-theme .footer
+{
   background-color: hsl(var(--second-hue), 32%, 90%, 0.8);
 }
 
@@ -638,6 +640,7 @@ body.light-theme {
 }
 
 .light-theme .home__social-link,
+.light-theme .footer__icon,
 .light-theme .home__scroll,
 .light-theme .button,
 .light-theme .button:hover,

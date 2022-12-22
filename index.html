@@ -42,10 +42,8 @@
             <a href="#contact" class="nav__link">Contact</a>
           </li>
           <li class="nav__item">
-            <a href="#home" class="nav__link">
             <!-- Theme change button -->
-              <i class="bx bx-moon change-theme" id="theme-button"></i>
-            </a>
+            <i class="bx bx-moon change-theme" id="theme-button"></i>
           </li>
         </ul>
       </div>
@@ -64,8 +62,8 @@
           Web Developer
         </h1>
 
-        <a href="#contact" class="button">Contact</a>
-        <a href="assets/pdf/cv.pdf" class="button"
+        <a href="#contact" class="button" style="margin:  1rem 0; ">Contact</a>
+        <a href="assets/pdf/Võ Thương Trường Nhơn.pdf" class="button"
           style="background-color: white; border-color: rgb(49, 112, 238) ; border-style: dashed;">
           <p style="color: black;">Download CV</p>
         </a>
@@ -338,12 +336,12 @@
         </div>
 
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
+          <form action="https://formspree.io/f/mzbqpajo" class="contact__form" method="POST">
             <input type="text" placeholder="Name" class="contact__input" />
             <input type="mail" placeholder="Email" class="contact__input" />
-            <textarea name="" id="" cols="0" rows="10" class="contact__input"
+            <textarea name="message" id="" cols="0" rows="10" class="contact__input"
               placeholder="Tell something about you"></textarea>
-            <input type="button" value="Send" class="contact__button button" />
+            <input type="submit" value="Send" class="contact__button button" />
           </form>
         </div>
     </div>
@@ -367,6 +365,41 @@
 
   <!--===== MAIN JS =====-->
   <script src="assets/js/main.js"></script>
+  <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/mzbqpajo",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
 </body>
 
 </html>
